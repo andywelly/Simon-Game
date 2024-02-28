@@ -43,11 +43,21 @@ function checkSequence(currentLevel) {
 
     } else {
         console.log("wrong");
+        
+        playSound("wrong")
+        
         $("body").addClass("game-over");
+
+        setTimeout(function() {
+            $("body").removeClass("game-over")
+        }, 300);
+
+        $("#level-title").text("Game Over, Press Any Key to Restart");
+
+        startOver();
     }
 
 }
-
 
 
 function playSound(currentColour) {
@@ -81,4 +91,10 @@ function animatePress(currentColour) {
         $("#" + currentColour).removeClass("pressed");
     }, 100);
 
+}
+
+function startOver() {
+    level = 0;
+    gamePattern = [];
+    started = false;
 }
