@@ -52,7 +52,7 @@ function checkSequence(currentLevel) {
             $("body").removeClass("game-over")
         }, 300);
 
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("Game Over, Press Any Key to Restart\nScore: " + level);
 
         startOver();
     }
