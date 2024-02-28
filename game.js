@@ -7,7 +7,6 @@ var userClickedPattern = [];
 var started = false;
 
 var level = 0;
-
 // On button click
 
 $(".btn").on("click", function() { 
@@ -50,7 +49,7 @@ function checkSequence(currentLevel) {
 
         setTimeout(function() {
             $("body").removeClass("game-over")
-        }, 300);
+        }, 200);
 
         $("#level-title").text("Game Over, Press Any Key to Restart\nScore: " + level);
 
