@@ -13,7 +13,3 @@ Game Over: If a mistake is made in repeating the sequence, the game ends
 
 ## Installation
 To play the Simon Game, simply clone this repository to your local machine and open 'index.html' in your web browser.
-
-***
-git clone https://github.com/your-username/simon-game.git
-***
